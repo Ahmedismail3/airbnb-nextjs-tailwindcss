@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import {SearchIcon} from "@heroicons/react/solid"
 
 
 
@@ -20,12 +21,11 @@ objectPosition="left"
 
 {/* {Middle/Search} */}
 
-<div>
-<input 
-type="text"
-
-/>
-
+<div className='flex items-center md:border-2  py-2 shadow-md rounded-full'>
+<input className='flex-grow pl-5  bg-transparent outline-none overflow-hidden text-sm text-gray-600 placeholder-gray-400'
+type="text" placeholder='Start your Search'
+/> 
+<SearchIcon className='hidden md:inline-flex h-8 bg-red-400 text-white rounded-full p-2 cursor-pointer md:mx-2 ' />
 </div>
 
 
