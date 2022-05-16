@@ -31,7 +31,7 @@ type="text" placeholder='Start your Search'
 
 {/* {Right} */}
 <div>
-
+<p>Become a host</p>
 
 </div>
     
