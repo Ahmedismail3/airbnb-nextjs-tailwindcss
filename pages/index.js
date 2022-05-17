@@ -15,6 +15,7 @@ function Home() {
       </Head>
       <Header />
       <Banner/>
+      <Smallcard/>
     </div>
   )
 }  

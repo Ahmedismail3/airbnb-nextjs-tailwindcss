@@ -15,8 +15,12 @@ function Banner() {
     
     <div className='absolute top-1/2 w-full text-center'>
     <p>Not sure where to go? Perfect. </p>
-   <button className='border-3  text-white bg-[#FD5B61] px-10 py-4 shadow-md rounded-full font-bold p-2 my-4 hover:shadow-2xl '><h1>I'm flexible</h1> </button>
+   <button className='border-3  text-white bg-[#FD5B61] px-10 py-4 shadow-md rounded-full font-bold p-2 my-4 hover:shadow-2xl active:scale-90 transition duration-150'><h1>I'm flexible</h1> </button>
     </div>
+
+
+
+    
     </div>
 
   )
