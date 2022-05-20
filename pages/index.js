@@ -3,11 +3,12 @@ import Header from "../components/Header"
 import Head from 'next/head'
 import Image from 'next/image'
 import Banner from "../components/Banner"
+import Smallcard from "../components/Smallcard"
 
 
+function Home({exploreData}) {
+exploreData
 
-function Home(props) {
-  props.exploreData
   return (
     <div>
       <Head>
@@ -16,6 +17,7 @@ function Home(props) {
       </Head>
       <Header />
       <Banner/>
+    
 <main className="max-w-7xl mx-auto px-8 sm:p-16 "> 
 <section className="pt-6">
 
@@ -24,7 +26,22 @@ function Home(props) {
 </h2>
 
 
-{/* {pull api data} */}
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" >  
+{exploreData?.map(({img, distance, location}) =>(
+<Smallcard 
+key={img}
+img={img} 
+distance={distance} 
+location={location}
+  />
+  
+))}
+
+
+
+</div>
+
+
 
 
 </section>
