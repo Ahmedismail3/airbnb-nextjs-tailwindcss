@@ -6,6 +6,7 @@ import Banner from "../components/Banner"
 import Smallcard from "../components/Smallcard"
 import Mediumcard from "../components/Mediumcard"
 import Largecard from "../components/Largecard"
+import Footer from "../components/Footer"
 
 
 function Home({exploreData , cardsData}) {
@@ -76,6 +77,8 @@ buttonText="Get Inspired"
 
 </main>
 
+
+<Footer/>
 
     </div>
   )
